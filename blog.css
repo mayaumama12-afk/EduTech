@@ -1,0 +1,224 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+
+}
+header img{
+	border-radius: 15px;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	padding: 2% 3%;
+	background-color: black;
+}
+#text{
+	flex: 1;
+	text-align: right;
+}
+
+header ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 30px;
+	font-size: 1.5rem;
+	position: relative;
+}
+header ul li a{
+	text-decoration: none;
+	color: #ddd;
+}
+header ul li::after{
+	content: '';
+	width: 0%;
+	height: 3px;
+	background-color: #efcc00;
+	display: flex;
+	margin: auto;
+	transition: 0.5s;
+
+}
+header ul li:hover::after{
+	width: 100%;
+}
+header .fa-duotone{
+	display: none;
+}
+header .fa-regular{
+	display: none	;
+}
+.fa-house{
+	font-size: 17px;
+	color: #efcc00;
+}
+.fa-book{
+	font-size: 17px;
+	color: #efcc00;
+}
+.fa-phone{
+	font-size: 17px;
+	color: #efcc00;
+}
+.fa-user{
+	font-size: 17px;
+	color: #efcc00;
+}
+.fa-blog{
+	font-size: 17px;
+	color: #efcc00;
+}
+
+.image{
+	height: 100vh;
+	position: relative;
+}
+.one{
+	background: url(pics/effect4.jpeg),url(pics/led.jpg);
+	background-size: cover,cover;
+	background-repeat: no-repeat,no-repeat;
+	background-blend-mode: multiply;
+	background-position: center, right;
+}
+.two{
+	background: url(pics/effect5.jpeg),url(pics/code.jpg);
+	background-size: cover,cover;
+	background-repeat: no-repeat,no-repeat;
+	background-blend-mode: multiply;
+	background-position: center, right;
+}
+.three{
+	background: url(pics/effect4.jpeg),url(pics/ledblue.jpg);
+	background-size: cover,cover;
+	background-repeat: no-repeat,no-repeat;
+	background-blend-mode: multiply;
+	background-position: center, right;
+}
+.four{
+	background: url(pics/effect5.jpeg),url(pics/code2.jpg);
+	background-size: cover,cover;
+	background-repeat: no-repeat,no-repeat;
+	background-blend-mode: multiply;
+	background-position: center, left;
+}
+
+.text{
+	display: flex;
+	position: absolute;
+	left: 30px;
+	top: 140px;
+	text-align: center;
+}
+.lorem{
+	position: absolute;
+	text-align: center;
+	right: 20px;
+	top: 140px;
+	/*display: flex;*/
+	width: 50%;
+}
+.textcol{
+	flex-basis: 55%;
+	color: white;
+}
+.textcol h1{
+	padding-bottom: 20px;
+}
+.text p{
+	margin: 1%,4%,1%,4%;
+}
+/*about us*/
+.aboutus{
+	background-color: black;
+}
+.about{
+	margin: auto;
+	text-align: center;
+	width: 80%;
+	border-radius: 10px;
+	margin-bottom: 45px;
+	color: white;
+}
+.about h3{
+	margin-top: 20px;
+}
+.about .maya{
+	padding-bottom: 20px;
+}
+.fa-brands{
+	margin: 13px;
+	padding: 3px;
+}
+.fa-brands:hover{
+	transform: scale(1.2);
+}
+@media (max-width: 700px){
+	header ul li{
+		display: block;
+	}
+	header ul li a{
+		color: white;
+	}
+	header .fa-duotone{
+	display: block;
+	font-size: 22px;
+	color: #efcc00; 
+	padding: 20px;
+	cursor: pointer;
+}
+	#text{
+		min-height: 100vh;
+		width: 220px;
+		position: absolute;
+		top: 0;
+		right: -220px;
+		background-color: #efcc00;
+		padding: 15px;
+		z-index: 3;
+		text-align: left;
+		transition: 2s;
+	}
+	header ul li::after{
+		background-color: #6f9cde;
+	}
+	img{
+		width: 60px;
+		height: 60px;
+	}
+
+	header .fa-regular{
+		display: block;
+		margin: 3px;
+		font-size: 22px;
+		cursor: pointer;
+	}
+	.fa-phone{
+		color: #6f9cde;
+	}
+	.fa-house{
+		color: #6f9cde;
+	}
+	.fa-book{
+		color: #6f9cde;
+	}
+	.fa-blog{
+		color: #6f9cde;
+	}
+	.fa-user{
+		color: #6f9cde;
+	}
+	section{
+		background-position: right;
+	}
+	section p{
+		font-size: 14px;
+	}
+	section h1{
+		font-size: 25px;
+	}
+}
+.fa-brands{
+	cursor: pointer;
+}

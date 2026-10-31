@@ -1,0 +1,264 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	overflow-x: hidden;
+
+}
+header img{
+	border-radius: 15px;
+}
+header{
+	display: flex;
+	justify-content: space-between;
+	align-content: center;
+	padding: 2% 3%;
+}
+#text{
+	flex: 1;
+	text-align: right;
+}
+
+header ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 30px;
+	font-size: 1.5rem;
+	position: relative;
+}
+header ul li a{
+	text-decoration: none;
+	color: #ddd;
+}
+header ul li::after{
+	content: '';
+	width: 0%;
+	height: 3px;
+	background-color: #efcc00;
+	display: flex;
+	margin: auto;
+	transition: 0.5s;
+
+}
+header ul li:hover::after{
+	width: 100%;
+}
+
+header .fa-duotone{
+	display: none;
+}
+header .fa-regular{
+	display: none	;
+}
+.fa-house{
+	font-size: 17px;
+	color: #efcc00;
+}
+.fa-book{
+	font-size: 17px;
+	color: #efcc00;
+}
+.fa-phone{
+	font-size: 17px;
+	color: #efcc00;
+}
+.fa-user{
+	font-size: 17px;
+	color: #efcc00;
+}
+.fa-blog{
+	font-size: 17px;
+	color: #efcc00;
+}
+
+@media (max-width: 700px){
+	header ul li{
+		display: block;
+	}
+	header ul li a{
+		color: white;
+	}
+	header .fa-duotone{
+	display: block;
+	font-size: 22px;
+	color: #efcc00; 
+	padding: 20px;
+	cursor: pointer;
+}
+	#text{
+		min-height: 100vh;
+		width: 220px;
+		position: absolute;
+		top: 0;
+		right: -220px;
+		background-color: #efcc00;
+		padding: 15px;
+		z-index: 3;
+		text-align: left;
+		transition: 2s;
+	}
+	header ul li::after{
+		background-color: #6f9cde;
+	}
+	img{
+		width: 60px;
+		height: 60px;
+	}
+
+	header .fa-regular{
+		display: block;
+		margin: 3px;
+		font-size: 22px;
+		cursor: pointer;
+	}
+	.fa-phone{
+		color: #6f9cde;
+	}
+	.fa-house{
+		color: #6f9cde;
+	}
+	.fa-book{
+		color: #6f9cde;
+	}
+	.fa-blog{
+		color: #6f9cde;
+	}
+	.fa-user{
+		color: #6f9cde;
+	}
+}
+/*header*/
+body{
+		background: linear-gradient(rgba(4, 9, 30, 0.7)),url(pics/laptop1.jpg);
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+section{
+	/*height: 70vh;*/
+}
+.contect{
+	border-radius: 20px;
+	border: 2px solid white;
+	display: flex;		
+}
+.contect-us{
+	width: 90%;
+	margin: auto;
+	text-align: center;
+	padding-top: 10px;
+}
+.row{
+	width: 55%;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 4%;
+
+}
+.col{
+	flex-basis: 30%;
+	border-radius: 20px;
+	border: 2px solid #efcc00;
+	background-color: white;
+	padding: 10px;
+}
+.col img{
+	margin-bottom: 14px;
+}
+.col-one{
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+}
+
+.formcol{
+	flex-basis: 44%;
+	text-align: center;
+}
+input{
+	text-align: center;
+}
+.form-box{
+	display: flex;
+	flex-direction: column;   
+	gap: 15px;                
+	width: 100%;
+	max-width: 400px;
+	margin: auto;
+}
+.form-box img{
+	border-radius: 10px;
+}
+.form-box input{
+	font-size: 16px;
+	border-radius: 8px;
+	padding: 12px;
+	width: 100%;
+	margin-top: 10px;
+}
+.form-box .submit{
+	background-color: #efcc00;
+}
+
+.form-box .input{
+	padding: 12px;
+	font-size: 16px;
+	border-radius: 8px;
+	border: 1px solid #ccc;
+}
+.contect-us h2{
+	padding-top: 10px;
+	color: #efcc00;
+}
+.col h5{
+	cursor: pointer;
+}
+.contect-us p{
+	padding-bottom: 30px;
+	color:  white;
+}
+.row{
+	padding-bottom: 10px;
+}
+
+/*about us*/
+.aboutus{
+	padding-top: 20px;
+}
+.about{
+	margin: auto;
+	text-align: center;
+	width: 80%;
+	border-radius: 10px;
+	background: white;
+	margin-bottom: 44px;
+	border: 2px solid #efcc00;
+}
+.about h3{
+	margin-top: 20px;
+}
+.about .maya{
+	padding-bottom: 20px;
+}
+.fa-brands{
+	margin: 13px;
+	padding: 3px;
+}
+.fa-brands:hover{
+	transform: scale(1.2);
+}
+@media (max-width: 700px){
+	.col-one{
+		flex-direction: column;
+	}
+	.form-box img{
+		height: 250px;
+		width: 100%;
+		margin-top: 20px;
+	}
+	
+}
+.fa-brands{
+	cursor: pointer;
+}
